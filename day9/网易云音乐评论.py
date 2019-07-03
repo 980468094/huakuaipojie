@@ -1,0 +1,8 @@
+import requests
+url='https://music.163.com/weapi/v1/resource/comments/R_SO_4_864506579?csrf_token='
+data={
+'params': 'DeQfHIj38jHl9XpokfG6m8FlHZ4Rvj1b1MeXV1PcrIuObAEHfOqMbxTWDbza4aKn0dnqh2ooQhQSfgcprfs1pNTOcGBVTg+eAdYpfMLxiKiD9xmNnAR/hEY2cQpoboheRwmmvZK0ZJVsKa8hgbOYRMXQUKhDEZFnKynHtDzxRrL0bbHtNNFFXL6OgIo0hi/q',
+'encSecKey': '9d9da5260068605d581d578b3e8dae598a51ba0f126380ef0fbdd8af681851cbe53aec9296f160a2b99ca572d69d70c17ffcbfa29f45762e8470e70541d34542284bf7da9bbedfea87062034e82f3566b67ff638b0f8e3c3faa5ace93d9658437875261364adf2ae1e30783e4f6337e511e40abc66b74a6c3ec532c99df069ee'
+}
+text=requests.post(url,data=data).text
+print(text)
